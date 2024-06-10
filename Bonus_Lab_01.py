@@ -1,4 +1,5 @@
 def reverse_num(x:int) -> str:
+    '''Takes an integer and returns a pattern'''
     pattern:str = ""
     for iint in range(x, 0, -1):
         for n in range(i, 0, -1):
