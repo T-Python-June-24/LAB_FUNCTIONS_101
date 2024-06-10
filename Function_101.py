@@ -1,4 +1,4 @@
-def FunctionLab(number:int) -> int: #the return type should be a string -> str
+def FunctionLab(number:int) -> int: #! the return type should be a string -> str
     '''
     this funtion takes an int input then it prints out the result formatted like this
     5 4 3 2 1   
@@ -20,7 +20,7 @@ def FunctionLab(number:int) -> int: #the return type should be a string -> str
 FunctionLab(int(input("plase enter a number ")))
 
 
-def FunctionBonus(number:int): #the return type should be a string -> str 
+def FunctionBonus(number:int) -> str: #! the return type should be a string -> str 
     '''
     this function takes an int input then it returns the result formatted like this
     5 4 3 2 1   
