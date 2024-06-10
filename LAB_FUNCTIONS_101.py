@@ -5,3 +5,4 @@ def reverse_num(x:int):
             print(f"{n} ", end="")
         print("")
 reverse_num(int(input("Enter an integer: ")))
+print(reverse_num.__doc__)

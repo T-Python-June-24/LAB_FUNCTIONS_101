@@ -8,3 +8,4 @@ def reverse_num(x:int) -> str:
     return pattern
 number_pattern = reverse_num(int(input("Enter an integer: ")))
 print(number_pattern)
+print(reverse_num.__doc__)
