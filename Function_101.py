@@ -1,28 +1,29 @@
-def FunctionLab(number:int) -> int: #! the return type should be a string -> str
+
+#? def a function by the name labSolution , it takes a prameter be the type integer
+def labSolution(rows:int)->int:
     '''
-    this funtion takes an int input then it prints out the result formatted like this
-    5 4 3 2 1   
-    4 3 2 1   
-    3 2 1   
-    2 1   
-    1  
-    
-    it takes the the user number as input like 5 then i toke the number into nested loop 
-    the first loop tells the count the number of row and the second one count the number of colmuns
+This function takes an integer input and prints a pattern of numbers in descending order. 
+and also it starts from the input value and prints each line with numbers decreasing by 1 until reaching 1.
+It continues this pattern until the last line with a single 1.
     
     '''
-    for i in range(number, 0, -1):
-        for j in range(i, 0, -1):
-            print(j, end=' ')
-        print()
+    
+    # while rows > 0:
+    for row in range(rows,0,-1):
+        for column in range(rows,0,-1):  
+            print(column,end=' ') 
+        print("\n")
+        rows-=1  
+try:   
+  labSolution(int(input("Plase Enter Postive Number: ")))
+except:print("\n Opss Something went wrong!!")
+print(labSolution.__doc__)
 
-        
-FunctionLab(int(input("plase enter a number ")))
 
 
-def FunctionBonus(number:int) -> str: #! the return type should be a string -> str 
+def FunctionBonus(number: int) -> str:
     '''
-    this function takes an int input then it returns the result formatted like this
+    This function takes an int input and returns the result formatted like this:
     5 4 3 2 1   
     4 3 2 1   
     3 2 1   
@@ -36,5 +37,9 @@ def FunctionBonus(number:int) -> str: #! the return type should be a string -> s
         result += '\n'
     return result
 
-pattern = FunctionBonus() #! assign the result to a variable
-print(pattern) #!print the variabel 
+# Get user input
+user_input = int(input("Please enter a number: "))
+
+# Assign the result to a variable and print it
+pattern = FunctionBonus(user_input)
+print(pattern)
