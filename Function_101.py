@@ -13,7 +13,7 @@ It continues this pattern until the last line with a single 1.
         for column in range(rows,0,-1):  
             print(column,end=' ') 
         print("\n")
-        rows-=1  
+        # rows-=1  
 try:   
   labSolution(int(input("Plase Enter Postive Number: ")))
 except:print("\n Opss Something went wrong!!")
@@ -23,12 +23,16 @@ print(labSolution.__doc__)
 
 def FunctionBonus(number: int) -> str:
     '''
+    
+    
     This function takes an int input and returns the result formatted like this:
     5 4 3 2 1   
     4 3 2 1   
     3 2 1   
     2 1   
     1  
+    
+    
     '''
     result = ''
     for i in range(number, 0, -1):
