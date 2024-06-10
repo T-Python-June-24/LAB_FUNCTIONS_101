@@ -4,7 +4,7 @@ def patt(x:int) -> str:
     for i in range(x,0, -1):
         for j in range(i,0, -1):
             pattern += str(j) + " "
-        pattern = pattern + "\n"
+        pattern += "\n"
     return pattern
 
 pattern = patt(5)
