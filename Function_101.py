@@ -10,7 +10,7 @@ It continues this pattern until the last line with a single 1.
     
     # while rows > 0:
     for row in range(rows,0,-1):
-        for column in range(rows,0,-1):  
+        for column in range(row,0,-1):  
             print(column,end=' ') 
         print("\n")
         # rows-=1  
