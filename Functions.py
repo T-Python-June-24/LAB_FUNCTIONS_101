@@ -1,4 +1,9 @@
 def Functions(num:int):
+    '''This is the functions lap solution
+    
+    please be aware that Abdullah Aldhamen solved it
+    
+    after 2 hours of work'''
 
     for i in range(num, 0, -1):
         rowNums = []
@@ -16,3 +21,4 @@ def Functions(num:int):
     return ""
 
 Functions(5)
+print(Functions.__doc__)
