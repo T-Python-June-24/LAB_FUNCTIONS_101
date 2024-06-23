@@ -4,7 +4,7 @@ def pyramidShape (n:int ):
     for i in range(n,0, -1  ):
         for j in range( i, 0, -1):
             print(j, end=" ")
-    return("")
+        print(" ")
 
 pyramidShape(5)
 print(pyramidShape.__doc__)
